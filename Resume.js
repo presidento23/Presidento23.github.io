@@ -1,15 +1,4 @@
-// document.getElementsByClassName("img_4-wrap-collapsible").style.display = "blockw"
 
-// document.getElementById("img_4-collapsible")[0].onclick= function(class_name){
-//     popUp("img_4-collapsible")
-// }
-
-
-// function popUp(class_name)
-// {
-//     console.log(class_name)
-//     document.getElementByID(class_name)[0].style.display="none"
-//     console.log('fertig')
     
 var image5 = document.querySelector(".img_5");
 var modal_history = document.querySelector(".modal-work-history");
