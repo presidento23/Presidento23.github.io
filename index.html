@@ -3,11 +3,12 @@
 <title>JFK's Resume Website</title>
 <meta name= "viewport" content="width= device-width, intial-scale= 1.0"> 
 <link rel="stylesheet" href="Resume.css">
+<!-- <script defer src="resume.js"></script> -->
 </head>
 
 <body>
     <!-- this is where the popup about skills go  -->
-    <div class= "modal-skills">
+    <div class= "modal-skills"> 
             <button class="close-btn-skills" type="button" value = "Click to close">&times;</button>
             <h1>Miscellanous</h1>
             <ul class="work-history-listing">
@@ -226,7 +227,8 @@
 <!-- Begins Webite Layout -->
     </div>
     <div class= "profile-img">
-        <img src= "uBrWm1H.jpg">
+        <img src= "IMG_1206.jpg">
+        <img  src= "IMG_1209.JPG">
 
     </div>
 
@@ -240,30 +242,30 @@
                 further my current knowledge of programming and new opportunities to grow my career.
                 Former business major: in first year of an Electrical Engineering program
         </p>
-        <h2>Expertise</h2>
+        <h2 class = Exp-Title>Expertise</h2>
 
         <div class = "Expertise">
             <img src="datamining.png">
             <p><b>Data Mining</b></p>
             <small>
-                Some brief description of data Mining
+                Selenieum, Pythons Requests library, and Pandas
             </small>
         </div>
         <div class = "Expertise">
                 <img src="automation.png">
                 <p><b>Automation</b></p>
                 <small>
-                    Some brief description of data Mining
+                    Python and Shell languages to automate daily tasks
                 </small>
         </div>
         <div class = "Expertise">
                 <img src="datamining.png">
                 <p><b>Front End</b></p>
                 <small>
-                    Some brief description of data Mining
+                    Currently learning React and Angular
                 </small>
         </div>
-        <h2>Work Experience/ Projects</h2>
+        <h2 class = "Projects-Title">Work Experience/ Projects</h2>
             <div class= "projects-wrapper">
                 <div class="row">
                     <div class = "column">
@@ -308,7 +310,7 @@
                         </div>
                     </div>
                     <div class = "column">
-                        <div class="column2-row2">
+                        <div class="column3-row2">
                             <div class = "img_6">
                                     <img src = "https://image.flaticon.com/icons/svg/1373/1373027.svg">
                             </div>
@@ -321,11 +323,14 @@
     </div>
 
 </body>
-<script> 
+<script>
+    
     
 var image5 = document.querySelector(".img_5");
 var modal_history = document.querySelector(".modal-work-history");
 var closebtn_work_history = document.querySelector(".close-btn-work-history");
+
+
 
 
 var image4 = document.querySelector(".img_4");
@@ -338,8 +343,9 @@ var closebtn_skills = document.querySelector(".close-btn-skills");
 var image6 = document.querySelector(".img_6");
 
 function openModal_history(){
-    modal_history.style.display = 'block'
-    console.log("clicked")
+    modal_history.style.display = 'block';
+    modal_history_pic.style.display= "none";
+    image5.style.display = "none";
 
 }
 
@@ -368,7 +374,6 @@ function closeModal_skills(){
 
 }
 
-console.log(image5);
 console.log("modal-for-history" );
 console.log(modal_history);
 
@@ -382,8 +387,6 @@ closebtn_edu.onclick = closeModal_education;
 image6.onclick = openModal_skills;
 closebtn_skills.onclick = closeModal_skills;
 </script>
-
-
 </html>
 
 <!-- for crediation in a footer later 

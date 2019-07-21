@@ -1,8 +1,21 @@
+// document.getElementsByClassName("img_4-wrap-collapsible").style.display = "blockw"
 
+// document.getElementById("img_4-collapsible")[0].onclick= function(class_name){
+//     popUp("img_4-collapsible")
+// }
+
+
+// function popUp(class_name)
+// {
+//     console.log(class_name)
+//     document.getElementByID(class_name)[0].style.display="none"
+//     console.log('fertig')
     
 var image5 = document.querySelector(".img_5");
 var modal_history = document.querySelector(".modal-work-history");
 var closebtn_work_history = document.querySelector(".close-btn-work-history");
+
+
 
 
 var image4 = document.querySelector(".img_4");
@@ -15,8 +28,9 @@ var closebtn_skills = document.querySelector(".close-btn-skills");
 var image6 = document.querySelector(".img_6");
 
 function openModal_history(){
-    modal_history.style.display = 'block'
-    console.log("clicked")
+    modal_history.style.display = 'block';
+    modal_history_pic.style.display= "none";
+    image5.style.display = "none";
 
 }
 
@@ -45,7 +59,6 @@ function closeModal_skills(){
 
 }
 
-console.log(image5);
 console.log("modal-for-history" );
 console.log(modal_history);
 
