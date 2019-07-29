@@ -1,0 +1,592 @@
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+body
+{
+    background: #efefef;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    word-spacing: .095em;
+    letter-spacing: .02em;
+    overflow: hidden;
+}
+#profile-img{
+    width: 40%;
+    background: #efefef;
+    height: 50%;
+    border-left: 10px groove;
+    border-right: 10px groove;
+    border-right-color: rgba(240, 50, 50, 0.856);
+    border-left-color: rgba(105, 131, 218, 0.877);
+
+}
+
+
+
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+
+#profile-img img 
+{
+    width: 100%;
+    height: 100%;
+
+    
+}
+
+@media screen and (max-width:1000px){
+    #profile-img{
+        display: none;
+        width: 0px;
+
+    }
+
+}
+
+.about
+{
+    margin-left: 15px;
+    color: rgba(31, 30, 30, 0.925)
+}
+
+.profile-info
+{
+    width: 60%;
+    height: 100vh;
+    float: left;
+    padding: 0 30px;
+    overflow: auto;
+    
+
+}
+.profile-info::-webkit-scrollbar
+{
+    display: none;
+}
+
+
+.profile-info h1
+{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 5.0vmin;
+    font-weight: 500;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.329);
+    width: 100%;
+
+}
+
+.profile-info h1::after{
+    content: '';
+    display: block;
+    margin: 0;
+    width: 15.5vw;
+    border-bottom: 7px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: groove;
+    border-color: rgba(105, 131, 218, 0.801);
+    box-shadow: 4px 3px rgba(36, 34, 34, 0.411);
+}
+
+.profile-info p{
+font-size: 2.3vmin;
+
+}
+
+.profile-info h2
+{
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 4.5vmin;
+    font-weight: 450;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.329);
+
+    
+}
+
+@media screen and (max-width:1000px){
+    .profile-info{
+        width: 100%;
+    }
+
+}
+
+.Exp-Title::after{
+    content: '';
+    display: block;
+    margin: 0;
+    width: 16%;
+    border-bottom: 7px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: groove;
+    border-color: rgba(240, 50, 50, 0.801);
+    box-shadow: 4px 3px rgba(36, 34, 34, 0.411);
+}
+
+
+
+.card-deck img
+{
+    margin-top: 5px;
+    width: 70%;
+    align-self: center;
+}
+
+.card-deck{
+    padding-bottom: 3vmin;
+    width: 103%;
+    height:auto;
+    padding: 10px;
+    
+}
+
+.card
+{
+    width: 80%;
+    height: auto;
+    margin-top: 3%;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 15px 15px 7px 1px rgba(105, 131, 218, 0.445) ;
+    background: #fff;
+}
+
+
+.Projects-Title{
+    padding-bottom: .8vh;
+}
+
+.Projects-Title::after{
+    content: '';
+    display: block;
+    margin: 0;
+    width: 48%;
+    border-bottom: 7px ;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: groove;
+    border-color: rgba(105, 131, 218, 0.801);
+    box-shadow: 4px 3px rgba(36, 34, 34, 0.411);
+}
+
+
+/*  css for the blocks underneath .expertise */
+
+
+
+#projects-wrapper  img
+
+{
+    display: block;
+    width: 80%;
+    height: auto;
+    padding:15px;
+    
+    
+}
+
+
+
+.row:not(:last-child){
+    border-bottom: 1px solid rgb(158, 150, 150);
+    
+}
+
+
+
+
+
+#column1-row1{
+    width: 110%;
+   
+
+}
+
+#column2-row1{
+    width: 110%;
+}
+#column3-row1{
+    position: relative;
+    width: 80%;
+}
+
+
+#column3-row1:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 80%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+
+}
+
+#column3-row1:hover:after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 120%;
+    z-index: -980;
+
+}
+
+#column1-row2{
+    position: relative;
+    width: 80%;
+}
+
+
+#column1-row2:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 80%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+
+}
+
+#column1-row2:hover:after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 120%;
+    z-index: -980;
+
+}
+
+
+#column2-row2{
+    position: relative;
+    width: 80%;
+}
+
+
+#column2-row2:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 80%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+}
+
+#column2-row2:hover::after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 100%;
+    z-index: -980;
+}
+
+#column3-row2{
+    position: relative;
+    width: 80%;
+}
+
+
+#column3-row2:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 80%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+
+}
+
+#column3-row2:hover:after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 120%;
+    z-index: -980;
+
+}
+
+
+
+
+/* for the modal-work-history */
+
+#modal-work-history{
+    display: none;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+#modal-work-history-dialog{
+    display: block;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+
+#modal-work-history h1{
+    margin: 0;
+}
+
+#modal-work-history h3{
+    font-weight: 500;
+}
+
+
+#close-btn-work-history
+{
+    display:block;
+    background-color: rgb(105, 131, 218) ;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 10%;
+    height: 10%;
+    font-size: 2.1vw;
+    font-weight: 800;  
+    z-index: 1030; 
+   
+}
+
+
+ /* for the elements in modals */
+#date {
+    font-size: 1rem;
+    
+}
+
+@media screen and (max-width: 800){
+    h3{
+        font-size: 2rem;
+    }
+
+} 
+
+
+
+
+.Work-Position{
+    margin-top: 5px;
+    font-weight: 400;
+    color: rgb(27, 24, 24)
+}
+
+.Work-Place:not(:first-child){
+    margin-top: 15px;
+    
+
+}
+
+/* for the lists */
+
+.work-history-listing{
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 8px;
+    margin-top: 20px;
+    border: 7px solid;
+    border-style: ridge;
+    border-color: white rgb(240, 50, 50) rgb(240, 50, 50);
+    border-radius: 25px;
+    background-color: rgba(235, 232, 232, 0.767);
+    width: 66%;
+
+
+}
+
+
+.work-history-listing li {
+    margin-top: 10px;   
+    
+    
+
+}
+
+li:first-child{
+    margin-top: 5px;
+}
+
+
+
+#text-area-for-list{
+    word-wrap: word-break;
+    max-width: 30ems;
+}
+
+.work-history-listing :last-child{
+    padding-bottom: 5px;
+}
+
+
+
+/* this is for the popup about education */
+
+#modal-edu{
+    display: none;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+#modal-edu-dialog{
+    display: block;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+#modal-edu h1{
+    margin: 0;
+}
+
+.close-btn-edu
+{
+    display:block;
+    background-color: rgb(105, 131, 218) ;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    float: right;
+    width: 50px;
+    height: 45px;
+    font-size: 2.1vw;   
+    
+    
+}
+ /* for the elements in modals */
+.date 
+{
+    float: right;
+}
+
+
+
+#modal-work-skills{
+    display: none;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+#modal-skills-dialog{
+    display: block;
+    position: fixed;
+    background:rgb(105, 131, 218) ;
+    padding: 10px;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    left: 0;
+    z-index: 1050;
+    margin: 0 auto;
+    overflow-y: auto;
+}
+
+
+#modal-skills h1{
+    margin: 0;
+}
+
+#modal-skills h3{
+    font-weight: 500;
+}
+
+
+#close-btn-skills
+{
+    display:block;
+    background-color: rgb(105, 131, 218) ;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    width: 10%;
+    height: 10%;
+    font-size: 2.1vw;
+    font-weight: 800;  
+    z-index: 1030; 
+}
+
+
+footer{
+    display: block;
+    width: 100%;
+    color:rgb(8, 8, 8);
+    margin-top: 10vmin;
+    border: 10px;
+    border-style: outset;
+    border-color: rgb(240, 50, 50) ;
+}
