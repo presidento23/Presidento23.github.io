@@ -1,4 +1,6 @@
-
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
 
 *
 {
@@ -189,7 +191,7 @@ font-size: 2.3vmin;
 }
 
 
-/*  css for the blocks underneath .expertise */
+/*  css for the blocks underneath the cards */
 
 
 
@@ -217,13 +219,66 @@ font-size: 2.3vmin;
 
 #column1-row1{
     width: 110%;
+    position: relative;
    
+
+}
+
+#column1-row1:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 120%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+
+}
+#column1-row1:hover:after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 120%;
+    z-index: -980;
 
 }
 
 #column2-row1{
     width: 110%;
+    position: relative;
+
+   
+
 }
+
+#column2-row1:hover{
+    
+    top:-15px;
+    left:-25px;
+    width: 120%;
+    height:auto;
+    display:block;
+    z-index:999;
+    cursor: pointer;
+
+
+}
+#column2-row1:hover:after{
+
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 25px;
+    height: 100%;
+    width: 120%;
+    z-index: -980;
+
+}
+
 #column3-row1{
     position: relative;
     width: 80%;
@@ -251,6 +306,7 @@ font-size: 2.3vmin;
     height: 100%;
     width: 120%;
     z-index: -980;
+
 
 }
 
@@ -344,6 +400,17 @@ font-size: 2.3vmin;
 }
 
 
+.img_1 img{
+    border-radius: 18%;
+}
+
+.img_2 img{
+    border-radius: 18%;
+
+}
+
+
+
 
 
 /* for the modal-work-history */
@@ -391,10 +458,10 @@ font-size: 2.3vmin;
     background-color: rgb(105, 131, 218) ;
     border: none;
     padding: 10px;
-    margin: 5px;
+    margin: 2.8px;
     width: 10%;
     height: 10%;
-    font-size: 2.1vw;
+    font-size: 2.8vw;
     font-weight: 800;  
     z-index: 1030; 
    
@@ -412,6 +479,10 @@ font-size: 2.3vmin;
         font-size: 2rem;
     }
 
+    .close{
+        display: block;
+        font-size: 5vw;
+    }
 } 
 
 
@@ -438,9 +509,11 @@ font-size: 2.3vmin;
     margin-top: 20px;
     border: 7px solid;
     border-style: ridge;
-    border-color: white rgb(240, 50, 50) rgb(240, 50, 50);
+    border-color: rgb(105, 131, 218) rgb(240, 50, 50) rgb(105, 131, 218) rgb(240, 50, 50);
     border-radius: 25px;
-    background-color: rgba(235, 232, 232, 0.767);
+    background-color: rgba(235, 232, 232, 0.308);
+    font-weight: 500;
+    color: rgb(31, 30, 30);
     width: 66%;
 
 
@@ -505,7 +578,7 @@ li:first-child{
     margin: 0;
 }
 
-.close-btn-edu
+#close-btn-edu
 {
     display:block;
     background-color: rgb(105, 131, 218) ;
@@ -519,6 +592,8 @@ li:first-child{
     
     
 }
+
+
  /* for the elements in modals */
 .date 
 {
@@ -530,7 +605,7 @@ li:first-child{
 #modal-work-skills{
     display: none;
     position: fixed;
-    background:rgb(105, 131, 218) ;
+    background:rgb(105, 131, 218));
     padding: 10px;
     width: 100%;
     top: 0;
@@ -582,9 +657,11 @@ li:first-child{
 footer{
     display: block;
     width: 100%;
-    color:rgb(8, 8, 8);
+    color:rgb(230, 227, 227);
     margin-top: 10vmin;
-    border: 10px;
-    border-style: outset;
-    border-color: rgb(240, 50, 50) ;
+    border: 8px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(185, 180, 180);
+    background-color: rgb(185, 180, 180)
 }
